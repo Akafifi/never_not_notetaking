@@ -1,17 +1,18 @@
-const path = require('path')
+const routes = require('./routes')
+const requestLogger = require('./middleware/request-logger')
+const express = require('express')
 const app = express()
-const PORT = 3000
-const notes = require(/data/pets.json)
+const PORT = process.env.PORT || 3001
 
+// allows the browser to request ANYTHING out of the public folder
 app.use(express.static('public'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req,res) => {
-    res.sendFile(path.join(_dirname, 'public', 'index.html'))
-})
+// app.use(requestLogger)
 
-app.get('/about', (req, res), => {
-    res.sendFile(path.join(_dirname, 'public', 'contact.html'))
-})
-app.get('/api/all-notes', (req, res) => {
-    res.json(notes)
+app.use(routes)
+
+app.listen(PORT, () => {
+  console.log(`Express listening on http://localhost:${PORT}`)
 })
