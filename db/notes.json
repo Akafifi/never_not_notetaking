@@ -1,19 +1,27 @@
-{
-    "notes": [
-      {
-        "title": "Note 1",
-        "text": "Lunch at La Kitchenette at 1",
-        "id": "82a85488-cb71-43c9-b22b-0976ca7f5a23"
-      },
-      {
-        "title": "Note 2",
-        "text": "Class at 6:30p",
-        "id": "6d08c18d-abf6-41ad-9af7-867f0598c788"
-      },
-      {
-        "title": "Note 3",
-        "text": "Submit homework by 11:59p",
-        "id": "dfdf265b-2a20-4952-814b-289175a3a0c8"
-      }
-    ]
-  }
+[
+    {
+        "text": "text",
+        "title": "test",
+        "id": "7d912bf1-7882-4b72-901d-75c0557c9d1f"
+    },
+    {
+        "text": "two",
+        "title": "test",
+        "id": "f6f64e5d-01e2-4811-95d8-cde530eb325f"
+    },
+    {
+        "text": "three",
+        "title": "test",
+        "id": "c63be08f-63f7-48e0-949b-bab802045e25"
+    },
+    {
+        "text": "again",
+        "title": "test",
+        "id": "007dd408-3093-43bc-a017-5c4f132a0f0d"
+    },
+    {
+        "text": "again",
+        "title": "hi",
+        "id": "a9cce2f7-63f0-430c-a0f3-b7ea426065e1"
+    }
+]
